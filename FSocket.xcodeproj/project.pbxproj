@@ -10,6 +10,7 @@
 		184F916F27917C97001D59EC /* FSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184F916627917C96001D59EC /* FSocket.framework */; };
 		184F917427917C97001D59EC /* FSocketTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 184F917327917C97001D59EC /* FSocketTests.m */; };
 		184F917527917C97001D59EC /* FSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 184F916927917C96001D59EC /* FSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		18BE237F2791963E00DC24CD /* jetfire in Resources */ = {isa = PBXBuildFile; fileRef = 18BE237E2791963E00DC24CD /* jetfire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +29,7 @@
 		184F916E27917C97001D59EC /* FSocketTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FSocketTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		184F917327917C97001D59EC /* FSocketTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSocketTests.m; sourceTree = "<group>"; };
 		18BE237D279195C700DC24CD /* backend */ = {isa = PBXFileReference; lastKnownFileType = folder; path = backend; sourceTree = "<group>"; };
+		18BE237E2791963E00DC24CD /* jetfire */ = {isa = PBXFileReference; lastKnownFileType = folder; path = jetfire; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 		184F915C27917C96001D59EC = {
 			isa = PBXGroup;
 			children = (
+				18BE237E2791963E00DC24CD /* jetfire */,
 				18BE237D279195C700DC24CD /* backend */,
 				184F916827917C96001D59EC /* FSocket */,
 				184F917227917C97001D59EC /* FSocketTests */,
@@ -175,6 +178,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18BE237F2791963E00DC24CD /* jetfire in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
