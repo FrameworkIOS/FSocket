@@ -18,7 +18,8 @@
 -(BOOL)hasNext;
 
 -(NSString*)read:(int)count;
-
+-(NSString*)readUntilOccurence:(NSString*)string;
+-(NSString*)readUntilEnd;
 -(int)advance:(int)offset;
 
 @end
