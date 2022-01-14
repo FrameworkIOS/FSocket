@@ -18,6 +18,19 @@
     return self;
 }
 
+-(void) log:(NSString*)message type:(NSString*)type {
+}
+
+-(void) error:(NSString*)message type:(NSString*)type {
+}
+
+-(void) printLog:(NSString*)logType message:(NSString*)message type:(NSString*)type
+{
+    if(_log) {
+        NSLog(@"%@ %@: %@", logType, type, message);
+    }
+    
+}
 
 -(void)dealloc {
     
