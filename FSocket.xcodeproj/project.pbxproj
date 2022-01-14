@@ -34,6 +34,7 @@
 		18BE2380279196CF00DC24CD /* FSocketLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSocketLogger.h; sourceTree = "<group>"; };
 		18BE2381279197F900DC24CD /* FSocketLogger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSocketLogger.m; sourceTree = "<group>"; };
 		18BE2383279199F700DC24CD /* DefaultSocketLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefaultSocketLogger.h; sourceTree = "<group>"; };
+		18BE238427919ACA00DC24CD /* FStringReader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FStringReader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +83,7 @@
 				18BE2380279196CF00DC24CD /* FSocketLogger.h */,
 				18BE2381279197F900DC24CD /* FSocketLogger.m */,
 				18BE2383279199F700DC24CD /* DefaultSocketLogger.h */,
+				18BE238427919ACA00DC24CD /* FStringReader.h */,
 			);
 			path = FSocket;
 			sourceTree = "<group>";
