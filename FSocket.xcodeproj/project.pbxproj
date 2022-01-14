@@ -11,6 +11,7 @@
 		184F917427917C97001D59EC /* FSocketTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 184F917327917C97001D59EC /* FSocketTests.m */; };
 		184F917527917C97001D59EC /* FSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 184F916927917C96001D59EC /* FSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		18BE237F2791963E00DC24CD /* jetfire in Resources */ = {isa = PBXBuildFile; fileRef = 18BE237E2791963E00DC24CD /* jetfire */; };
+		18BE2382279197F900DC24CD /* FSocketLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BE2381279197F900DC24CD /* FSocketLogger.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,7 @@
 		18BE237D279195C700DC24CD /* backend */ = {isa = PBXFileReference; lastKnownFileType = folder; path = backend; sourceTree = "<group>"; };
 		18BE237E2791963E00DC24CD /* jetfire */ = {isa = PBXFileReference; lastKnownFileType = folder; path = jetfire; sourceTree = "<group>"; };
 		18BE2380279196CF00DC24CD /* FSocketLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSocketLogger.h; sourceTree = "<group>"; };
+		18BE2381279197F900DC24CD /* FSocketLogger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSocketLogger.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 			children = (
 				184F916927917C96001D59EC /* FSocket.h */,
 				18BE2380279196CF00DC24CD /* FSocketLogger.h */,
+				18BE2381279197F900DC24CD /* FSocketLogger.m */,
 			);
 			path = FSocket;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18BE2382279197F900DC24CD /* FSocketLogger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
