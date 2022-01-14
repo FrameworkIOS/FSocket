@@ -30,6 +30,7 @@
 		184F917327917C97001D59EC /* FSocketTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSocketTests.m; sourceTree = "<group>"; };
 		18BE237D279195C700DC24CD /* backend */ = {isa = PBXFileReference; lastKnownFileType = folder; path = backend; sourceTree = "<group>"; };
 		18BE237E2791963E00DC24CD /* jetfire */ = {isa = PBXFileReference; lastKnownFileType = folder; path = jetfire; sourceTree = "<group>"; };
+		18BE2380279196CF00DC24CD /* FSocketLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSocketLogger.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				184F916927917C96001D59EC /* FSocket.h */,
+				18BE2380279196CF00DC24CD /* FSocketLogger.h */,
 			);
 			path = FSocket;
 			sourceTree = "<group>";
