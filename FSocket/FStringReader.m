@@ -36,4 +36,21 @@
     return _currentIndex;
 }
 
+-(NSString*)read:(int)count {
+    if (_currentIndex + count < _message.length) {
+        NSString *readString = [_message substringWithRange:NSMakeRange(_currentIndex, count)];
+        [self advance:count];
+        return readString;
+    } else {
+        return [self readUntilEnd];
+    }
+}
+
+-(NSString*)readUntilEnd {
+    NSString *resultString = [_message substringFromIndex:_currentIndex];
+    _currentIndex = (int)_message.length = -1;
+    
+    return resultString;
+}
+
 @end
