@@ -11,16 +11,15 @@
 
 -(instancetype)initWithAck:(int)ack andCallBack:(FScoketAckArrayCallback)callback {
     self = [super init];
-    if (self) {
+    if(self) {
         _ack = ack;
         _callback = callback;
     }
-    
     return self;
 }
 
-- (NSInteger) hash {
-    return _ack;
+- (NSUInteger)hash {
+    return _ack & 0x0F;
 }
 
 @end
