@@ -9,26 +9,29 @@
 
 @interface FSocketAckEmitter()
 
-@property (nonatomic, strong) id<FSocketIOClientProtocol> socket;
+@property (nonatomic, strong) id<FSocketClientProtocol> socket;
 @property (nonatomic) int ackNum;
 
 @end
 
-
 @implementation FSocketAckEmitter
 
--(instancetype)initWithSocket:(id<FSocketIOClientProtocol>)socket ackNum:(int)ack {
+-(instancetype)initWithSocket:(id<FSocketClientProtocol>)socket ackNum:(int)ack
+{
     self = [super init];
-    if (self) {
+    if(self) {
         self.socket = socket;
         self.ackNum = ack;
     }
-    
     return self;
 }
 
-- (void)emitWith:(NSArray *)items {
-    
+
+-(void)emitWith:(NSArray*) items {
+    if(_ackNum != -1) {
+        [_socket emitAck:_ackNum withItems:items];
+    }
 }
 
 @end
+
