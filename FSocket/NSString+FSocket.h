@@ -11,5 +11,6 @@
 
 -(NSDictionary*)toDictionary;
 -(NSString*)urlEncode;
+-(NSArray*)toArray;
 
 @end
