@@ -10,15 +10,15 @@
 @implementation NSString (FSocket)
 
 -(NSDictionary*)toDictionary {
+    
     NSData *binData = [self dataUsingEncoding:NSUnicodeStringEncoding allowLossyConversion:NO];
-    if (binData != nil) {
+    if(binData != nil) {
         NSError *error = nil;
         id json = [NSJSONSerialization JSONObjectWithData:binData options:NSJSONReadingAllowFragments error:&error];
         if(error == nil && [json isKindOfClass:[NSDictionary class]]) {
             return json;
         }
     }
-    
     return nil;
 }
 
@@ -27,13 +27,16 @@
 }
 
 -(NSArray*)toArray {
-    NSData *binData = [self dataUsingEncoding:NSUnicodeStringEncoding allowLossyConversion:NO];
-    if (binData != nil) {
-        NSError *error = nil;
-    }
     
-    return nil
+    NSData *binData = [self dataUsingEncoding:NSUnicodeStringEncoding allowLossyConversion:NO];
+    if(binData != nil) {
+        NSError *error = nil;
+        id json = [NSJSONSerialization JSONObjectWithData:binData options:NSJSONReadingMutableContainers error:&error];
+        if(error == nil && [json isKindOfClass:[NSArray class]]) {
+            return json;
+        }
+    }
+    return nil;
 }
-
 
 @end
