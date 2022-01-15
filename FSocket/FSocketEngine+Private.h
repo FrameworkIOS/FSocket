@@ -9,7 +9,7 @@
 #import "JFRWebSocket.h"
 
 typedef enum : NSUInteger{
-    FS,cketEnginePacketTypeOpen = 0x0
+    FSsocketEnginePacketTypeOpen = 0x0
 }
 
 @interface FSocketEngine ()
