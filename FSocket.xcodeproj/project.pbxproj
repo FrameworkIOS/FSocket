@@ -28,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18274DEB279298BC00947B95 /* FSocketAck.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSocketAck.h; sourceTree = "<group>"; };
 		184F916627917C96001D59EC /* FSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		184F916927917C96001D59EC /* FSocket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSocket.h; sourceTree = "<group>"; };
 		184F916E27917C97001D59EC /* FSocketTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FSocketTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,6 +98,7 @@
 				189F7E61279286F200033839 /* NSString+FSocket.h */,
 				189F7E62279287E600033839 /* NSString+FSocket.m */,
 				189F7E64279289FA00033839 /* FSocketClientProtocol.h */,
+				18274DEB279298BC00947B95 /* FSocketAck.h */,
 			);
 			path = FSocket;
 			sourceTree = "<group>";
