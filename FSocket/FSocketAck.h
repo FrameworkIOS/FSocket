@@ -11,6 +11,9 @@
 @interface FSocketAck : NSObject
 
 @property (nonatomic, readonly) int ack;
-@property (nonatomic, strong, readonly) FSocketAckArrayCallback callback;
+@property (nonatomic, strong, readonly) FScoketAckArrayCallback callback;
+
+-(instancetype)initWithAck:(int)ack andCallBack:(FScoketAckArrayCallback)callback;
 
 @end
+
