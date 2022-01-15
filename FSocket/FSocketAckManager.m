@@ -15,24 +15,22 @@
 
 @end
 
-@implementation FSocketAckMnager
+@implementation FSocketAckManager
 
 -(instancetype)init {
     self = [super init];
-    if (self) {
+    if(self) {
         acks = [NSMutableSet set];
         ackSemaphore = dispatch_semaphore_create(0);
     }
-    
-    return self
+    return self;
 }
 
--(void)addAck:(int)ack callback:(FScoketAckArrayCallback)callback
-{
+-(void)addAck:(int)ack callback:(FScoketAckArrayCallback)callback {
     [acks addObject:[[FSocketAck alloc] initWithAck:ack andCallBack:callback]];
 }
--(void)executeAck:(int)ack withItems:(NSArray*)items onQueue:(dispatch_queue_t)queue
-{
+
+-(void)executeAck:(int)ack withItems:(NSArray*)items onQueue:(dispatch_queue_t)queue {
     FSocketAck *socketAck = [self removeAckWithId:ack];
     dispatch_async(queue, ^
     {
@@ -45,5 +43,32 @@
     });
     
 }
+-(void)timeoutAck:(int)ack onQueue:(dispatch_queue_t)queue {
+    FSocketAck *socketAck = [self removeAckWithId:ack];
+    dispatch_async(queue, ^
+    {
+        @autoreleasepool
+        {
+            if(socketAck && socketAck.callback) {
+                socketAck.callback(@[@"NO ACK"]);
+            }
+        }
+    });
+}
+
+-(FSocketAck*)removeAckWithId:(int)ack {
+    
+    dispatch_semaphore_wait(ackSemaphore,DISPATCH_TIME_FOREVER);
+    FSocketAck *socketAck = nil;
+    for (FSocketAck *vpack in acks) {
+        if(vpack.ack == ack) {
+            socketAck = vpack;
+        }
+    }
+    [acks removeObject:socketAck];
+    dispatch_semaphore_signal(ackSemaphore);
+    return socketAck;
+}
 
 @end
+
