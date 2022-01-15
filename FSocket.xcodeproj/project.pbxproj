@@ -11,6 +11,7 @@
 		184F917427917C97001D59EC /* FSocketTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 184F917327917C97001D59EC /* FSocketTests.m */; };
 		184F917527917C97001D59EC /* FSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 184F916927917C96001D59EC /* FSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		189F7E5F2792842500033839 /* DefaultSocketLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 189F7E5E2792842500033839 /* DefaultSocketLogger.m */; };
+		189F7E63279287E600033839 /* NSString+FSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 189F7E62279287E600033839 /* NSString+FSocket.m */; };
 		18BD3FAE2791ADC2001E24A0 /* FStringReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD3FAD2791ADC2001E24A0 /* FStringReader.m */; };
 		18BE237F2791963E00DC24CD /* jetfire in Resources */ = {isa = PBXBuildFile; fileRef = 18BE237E2791963E00DC24CD /* jetfire */; };
 		18BE2382279197F900DC24CD /* FSocketLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BE2381279197F900DC24CD /* FSocketLogger.m */; };
@@ -33,6 +34,7 @@
 		184F917327917C97001D59EC /* FSocketTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSocketTests.m; sourceTree = "<group>"; };
 		189F7E5E2792842500033839 /* DefaultSocketLogger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DefaultSocketLogger.m; sourceTree = "<group>"; };
 		189F7E61279286F200033839 /* NSString+FSocket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+FSocket.h"; sourceTree = "<group>"; };
+		189F7E62279287E600033839 /* NSString+FSocket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+FSocket.m"; sourceTree = "<group>"; };
 		18BD3FAD2791ADC2001E24A0 /* FStringReader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FStringReader.m; sourceTree = "<group>"; };
 		18BE237D279195C700DC24CD /* backend */ = {isa = PBXFileReference; lastKnownFileType = folder; path = backend; sourceTree = "<group>"; };
 		18BE237E2791963E00DC24CD /* jetfire */ = {isa = PBXFileReference; lastKnownFileType = folder; path = jetfire; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				18BD3FAD2791ADC2001E24A0 /* FStringReader.m */,
 				189F7E5E2792842500033839 /* DefaultSocketLogger.m */,
 				189F7E61279286F200033839 /* NSString+FSocket.h */,
+				189F7E62279287E600033839 /* NSString+FSocket.m */,
 			);
 			path = FSocket;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 				18BD3FAE2791ADC2001E24A0 /* FStringReader.m in Sources */,
 				189F7E5F2792842500033839 /* DefaultSocketLogger.m in Sources */,
 				18BE2382279197F900DC24CD /* FSocketLogger.m in Sources */,
+				189F7E63279287E600033839 /* NSString+FSocket.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
