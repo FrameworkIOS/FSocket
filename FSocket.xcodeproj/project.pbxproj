@@ -34,6 +34,7 @@
 		18274DEC27929A2400947B95 /* FSocketAck.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSocketAck.m; sourceTree = "<group>"; };
 		18274DEE27929B3000947B95 /* FSocketAckEmitter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSocketAckEmitter.h; sourceTree = "<group>"; };
 		18274DEF2792A00800947B95 /* FSocketAckEmitter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSocketAckEmitter.m; sourceTree = "<group>"; };
+		18274DF12792A50100947B95 /* FSocketAckManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSocketAckManager.h; sourceTree = "<group>"; };
 		184F916627917C96001D59EC /* FSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		184F916927917C96001D59EC /* FSocket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSocket.h; sourceTree = "<group>"; };
 		184F916E27917C97001D59EC /* FSocketTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FSocketTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,6 +108,7 @@
 				18274DEC27929A2400947B95 /* FSocketAck.m */,
 				18274DEE27929B3000947B95 /* FSocketAckEmitter.h */,
 				18274DEF2792A00800947B95 /* FSocketAckEmitter.m */,
+				18274DF12792A50100947B95 /* FSocketAckManager.h */,
 			);
 			path = FSocket;
 			sourceTree = "<group>";
