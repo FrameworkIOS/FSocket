@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		18274DED27929A2400947B95 /* FSocketAck.m in Sources */ = {isa = PBXBuildFile; fileRef = 18274DEC27929A2400947B95 /* FSocketAck.m */; };
 		18274DF02792A00800947B95 /* FSocketAckEmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 18274DEF2792A00800947B95 /* FSocketAckEmitter.m */; };
+		18274DF32792A64400947B95 /* FSocketAckManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 18274DF22792A64400947B95 /* FSocketAckManager.m */; };
 		184F916F27917C97001D59EC /* FSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184F916627917C96001D59EC /* FSocket.framework */; };
 		184F917427917C97001D59EC /* FSocketTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 184F917327917C97001D59EC /* FSocketTests.m */; };
 		184F917527917C97001D59EC /* FSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 184F916927917C96001D59EC /* FSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -35,6 +36,7 @@
 		18274DEE27929B3000947B95 /* FSocketAckEmitter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSocketAckEmitter.h; sourceTree = "<group>"; };
 		18274DEF2792A00800947B95 /* FSocketAckEmitter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSocketAckEmitter.m; sourceTree = "<group>"; };
 		18274DF12792A50100947B95 /* FSocketAckManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSocketAckManager.h; sourceTree = "<group>"; };
+		18274DF22792A64400947B95 /* FSocketAckManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSocketAckManager.m; sourceTree = "<group>"; };
 		184F916627917C96001D59EC /* FSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		184F916927917C96001D59EC /* FSocket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSocket.h; sourceTree = "<group>"; };
 		184F916E27917C97001D59EC /* FSocketTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FSocketTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,6 +111,7 @@
 				18274DEE27929B3000947B95 /* FSocketAckEmitter.h */,
 				18274DEF2792A00800947B95 /* FSocketAckEmitter.m */,
 				18274DF12792A50100947B95 /* FSocketAckManager.h */,
+				18274DF22792A64400947B95 /* FSocketAckManager.m */,
 			);
 			path = FSocket;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18274DED27929A2400947B95 /* FSocketAck.m in Sources */,
+				18274DF32792A64400947B95 /* FSocketAckManager.m in Sources */,
 				18BD3FAE2791ADC2001E24A0 /* FStringReader.m in Sources */,
 				18274DF02792A00800947B95 /* FSocketAckEmitter.m in Sources */,
 				189F7E5F2792842500033839 /* DefaultSocketLogger.m in Sources */,
