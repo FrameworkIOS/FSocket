@@ -11,8 +11,12 @@
 
 static FSocketLogger *logInstance;
 
-+ (void)setLogger:(FSocketLogger *)newLogger {
++(void)setLogger:(FSocketLogger*)newLogger {
     logInstance = newLogger;
+}
+
++(FSocketLogger*)logger {
+    return logInstance;
 }
 
 @end
