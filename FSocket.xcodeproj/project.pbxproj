@@ -13,6 +13,7 @@
 		184F916F27917C97001D59EC /* FSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184F916627917C96001D59EC /* FSocket.framework */; };
 		184F917427917C97001D59EC /* FSocketTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 184F917327917C97001D59EC /* FSocketTests.m */; };
 		184F917527917C97001D59EC /* FSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 184F916927917C96001D59EC /* FSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		187E00AA2792C2D1001F4C05 /* FSocketAnyEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 187E00A92792C2D1001F4C05 /* FSocketAnyEvent.m */; };
 		189F7E5F2792842500033839 /* DefaultSocketLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 189F7E5E2792842500033839 /* DefaultSocketLogger.m */; };
 		189F7E63279287E600033839 /* NSString+FSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 189F7E62279287E600033839 /* NSString+FSocket.m */; };
 		18BD3FAE2791ADC2001E24A0 /* FStringReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD3FAD2791ADC2001E24A0 /* FStringReader.m */; };
@@ -42,6 +43,7 @@
 		184F916E27917C97001D59EC /* FSocketTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FSocketTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		184F917327917C97001D59EC /* FSocketTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSocketTests.m; sourceTree = "<group>"; };
 		187E00A82792C0D3001F4C05 /* FSocketAnyEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSocketAnyEvent.h; sourceTree = "<group>"; };
+		187E00A92792C2D1001F4C05 /* FSocketAnyEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSocketAnyEvent.m; sourceTree = "<group>"; };
 		189F7E5E2792842500033839 /* DefaultSocketLogger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DefaultSocketLogger.m; sourceTree = "<group>"; };
 		189F7E61279286F200033839 /* NSString+FSocket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+FSocket.h"; sourceTree = "<group>"; };
 		189F7E62279287E600033839 /* NSString+FSocket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+FSocket.m"; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				18274DF12792A50100947B95 /* FSocketAckManager.h */,
 				18274DF22792A64400947B95 /* FSocketAckManager.m */,
 				187E00A82792C0D3001F4C05 /* FSocketAnyEvent.h */,
+				187E00A92792C2D1001F4C05 /* FSocketAnyEvent.m */,
 			);
 			path = FSocket;
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 				18BD3FAE2791ADC2001E24A0 /* FStringReader.m in Sources */,
 				18274DF02792A00800947B95 /* FSocketAckEmitter.m in Sources */,
 				189F7E5F2792842500033839 /* DefaultSocketLogger.m in Sources */,
+				187E00AA2792C2D1001F4C05 /* FSocketAnyEvent.m in Sources */,
 				18BE2382279197F900DC24CD /* FSocketLogger.m in Sources */,
 				189F7E63279287E600033839 /* NSString+FSocket.m in Sources */,
 			);
