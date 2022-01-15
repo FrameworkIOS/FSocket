@@ -11,5 +11,7 @@
 @interface FSocketAckEmitter : NSObject
 
 -(instancetype)initWithSocket:(id<FSocketClientProtocol>)socket ackNum:(int)ack;
+-(void)emitWith:(NSArray*) items;
 
 @end
+
