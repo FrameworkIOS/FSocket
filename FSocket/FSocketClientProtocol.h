@@ -15,7 +15,7 @@
 typedef void (^FScoketAckArrayCallback)(NSArray*array);
 typedef void (^FSocketOnEventCallback)(NSArray*array, FSocketAckEmitter*emitter);
 
-@protocol FSocketIOClientProtocol <NSObject>
+@protocol FSocketClientProtocol <NSObject>
 
 @required
 
