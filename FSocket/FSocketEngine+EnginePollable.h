@@ -12,6 +12,8 @@
 
 - (void) doPoll;
 - (void) stopPolling;
+- (void) doLongPoll:(NSURLRequest *)request;
 - (void) disconnectPolling;
 
+- (void)sendPollMessage:(NSString *)message withType:(FSocketEnginePacketType)type withData:(NSArray *)array;
 @end
